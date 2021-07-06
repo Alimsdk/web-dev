@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{text-decoration: none;}
+p{font-size: 0.9rem;
+line-height: 1.6;
+font-weight: 400;
+color: #606060;}
+li{list-style: none;}
+
+h2{
+  font-size: 0.9rem;
+  margin: 20px 0 15px 0;
+  font-weight: bold;
+  line-height: 1.1;
+  word-spacing: 4px;
+}
+
+div.header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(92, 201, 255, 0.904),
+      rgba(0, 168, 255, 0.3)
+    ),
+    url("../resource/main.jpg");
+  background-size: 100% 100%;
+  clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+  position: relative;
+}
+.navbar{background-color:rgba(83, 198, 255, 0.842);
+z-index: 1;}
+
+.header::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to right, #16c9f6 100%);
+  opacity: 0.4;
+  z-index: -1;
+
+}
+.nav-item a {
+  color: white!important;
+  font-weight: bold;
+}
+
+.header-section {
+  width: 100%;
+  height: inherit;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.center-div {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  align-items: center;
+}
+
+.header-buttons a:hover {
+  color: #50d1c0;
+  background-color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.center-div p {
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 10px 0 20px;
+}
+/* header ends here */
+
+.extradiv{
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+  text-align: center;
+}
+.box{background: #fff;
+border: medium none;
+padding: 50px!important;
+border-radius: 3px;
+transition: 0.3s;}
+.icon{color: rgba(0, 132, 255, 0.952);}
+.box:hover{
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-20px);
+}
+/* three div box ends here */
+
+h1.progname{font-size: 1.3rem;}
+.serviceoffers{
+  background-color:#f7f7f9;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+.headingh{font-size: 1.5rem;
+font-weight: 600;
+text-transform: uppercase;}
+
+.service-icon{display: flex;
+justify-content: center;
+align-self: center;}
+.progress{height: 0.6rem!important;
+margin-bottom: 15px!important;}
+
+/* project section */
+.projectwork{margin: 80px 0;}
+.projectwork h1{
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+section.pricing{width: 100%;
+height: 100vh;
+padding: 50px;
+position: relative;}
+
+section.pricing:before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  background: linear-gradient(160deg, #16c9f6 55%,#fff 0%);
+
+}
+.money{font-size: 40px;
+line-height: 1;
+color: #606060;}
+.card{transition: 0.4s ease;}
+.card-header{font-size: 1.5rem;
+font-weight: bold;
+background-color: #fff;
+padding: 25px 9px!important;}
+.card-body{padding: 30px 0!important;}
+.card-body li{margin:10px 0;
+font-weight: 400px;
+font-size: 1.2rem;
+line-height: 1.6;
+color: #606060;}
+
+.card-footer{background-color: #fff!important;
+padding: 30px 0px!important;}
+
+.card-footer a {
+  border: 1px solid #50d1c0;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #50d1c0;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.4;
+  align-items: center;
+}
+
+.card:hover .card-footer a:hover {
+  color: #fff;
+  background-color: #50d1c0;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+.card:hover{transform: translateY(-20px);}
+.card:hover .card-header, .card:hover .money{color:#50d1c0}
+
+/* customer feedback start */
+
+.happyclient{
+  margin-top: 200px;
+}
